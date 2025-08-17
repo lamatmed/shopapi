@@ -143,7 +143,7 @@ exports.updateUserViaSocket = async (userId, data) => {
       const filePath = path.join(uploadDir, filename);
       fs.writeFileSync(filePath, buffer);
       
-      updateData.image = `http://172.20.10.2:3000/uploads/${filename}`;
+      updateData.image = `https://shopapi-81ir.onrender.com/uploads/${filename}`;
     } 
     // URL existante
     else if (image.url) {

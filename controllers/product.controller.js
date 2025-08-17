@@ -74,7 +74,7 @@ exports.updateProduct = async (req, res) => {
       const filePath = path.join(uploadDir, req.body.image.filename);
       fs.writeFileSync(filePath, buffer);
       
-      req.body.image = `http://172.20.10.2:3000/uploads/${req.body.image.filename}`;
+      req.body.image = `https://shopapi-81ir.onrender.com/uploads/${req.body.image.filename}`;
     }
     const product = await Product.findByIdAndUpdate(
       req.params.id, 
