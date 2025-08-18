@@ -27,7 +27,7 @@ const userSchema = new mongoose.Schema({
   },
   image: {
     type: String,
-    default: 'http://172.20.10.2:3000/uploads/default-avatar.webp'
+    default: 'https://shopapi-81ir.onrender.com/uploads/default-avatar.webp'
   },
   isAdmin: {
     type: Boolean,
